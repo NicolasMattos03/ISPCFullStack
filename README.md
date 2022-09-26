@@ -1,4 +1,4 @@
-# ESTATE - Negocios Inmobiliarios
+# ESTATE - Bienes Raíces
 
 Proyecto Integrador del grupo 85 - ISPC Desarrollo Web y App's Digitales - Cohorte 2022
 
