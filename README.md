@@ -1,4 +1,4 @@
-# * GO Code Team
+# GO Code Team
 ## ESTATE - Negocios Inmobiliarios
 
 Proyecto Integrador del grupo 85 - ISPC Desarrollo Web y App's Digitales - Cohorte 2022
