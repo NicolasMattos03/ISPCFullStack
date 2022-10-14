@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ESTILO DEL NAVBAR */
+
+.logoEmpresa {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 25px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  text-align: center;
+}
+
+ul li a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  margin-right: 25px;
+}
+
+.navMenu {
+  display: flex;
+  height: 20px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+}
+
+/* FOOTER */
+
+/* AJUSTES RESPONSIVE */
+
+@media (max-width: 850px) {
+  .logoEmpresa {
+    flex-direction: column;
+    align-content: center;
+    line-height: 45px;
+  }
+
+  ul li a {
+    display: flex;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .logoEmpresa {
+    flex-direction: column;
+    align-items: center;
+    line-height: 45px;
+  }
+
+  ul li a {
+    display: flex;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  .contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .btn.btn-info {
+    margin-right: 14em;
+    margin-bottom: 2em;
+  }
+}
+
+@media (max-width: 550px) {
+  .contenedor {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .btn.btn-info {
+    margin-right: 14em;
+    margin-bottom: 2em;
+  }
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.texto-encima {
+  background-color: rgb(75, 128, 221);
+  font-family: "Kanit", sans-serif;
+  position: absolute;
+  font-size: 36px;
+  line-height: 42px;
+
+  top: 70px;
+  left: 10px;
+}
+
+.formulario {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: absolute;
+  font-size: 36px;
+  line-height: 42px;
+  width: 100%;
+  top: 150px;
+  left: 10px;
+}
+
+.btn.btn-info {
+  margin-right: 14em;
+  margin-bottom: 2em;
+}
+
+.avanzado {
+  font-size: 15px;
+  background-color: rgb(95, 132, 197);
+  font-family: "Kanit", sans-serif;
+  position: absolute;
+  line-height: 42px;
+  margin-top: 4em;
+}
+
+a.btn.btn-info {
+  margin-top: 4em;
+}
+
+a:hover {
+  color: rgb(116, 188, 221);
+}
+
+.modal {
+  visibility: visible;
+}
+
+/*inicia footer*/
+footer {
+  background-color: rgb(47, 47, 231);
+}
+
+.suscripcion {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  margin-top: 2%;
+  margin-left: 20%;
+}
+
+.flex-container {
+  display: flex;
+}
+.subscribe {
+  margin-left: 5%;
+  margin-top: 1.3%;
+}
+
+.btn.btn-default1 {
+  background-color: rgb(0, 166, 255);
+  border-color: black;
+}
+
+.form-control {
+  border-color: black;
+}
+
+.contenedor-flex {
+  display: flex;
+  align-content: center;
+}
+
+.parrafo {
+  font-size: small;
+  margin-left: 30px;
+  margin-top: -2%;
+  text-align: justify;
+}
+
+a.btn.btn-default1 {
+  margin-left: 110px;
+  margin-top: -45px;
+}
+
+/*Comienza iconos redes sociales*/
+.list-group-item {
+  background-color: #180c71fa;
+  border-color: #180c71fa;
+}
+
+i.fa-brands.fa-facebook.fa-2xl {
+  color: rgb(90, 90, 225);
+  cursor: pointer;
+}
+i.fa-brands.fa-facebook.fa-2xl:hover {
+  color: rgb(16, 16, 186);
+}
+i.fa-brands.fa-instagram.fa-2xl {
+  color: rgb(160, 109, 177);
+  cursor: pointer;
+}
+i.fa-brands.fa-instagram.fa-2xl:hover {
+  color: rgb(225, 0, 255);
+}
+i.fa-brands.fa-whatsapp.fa-2xl {
+  color: rgb(113, 238, 113);
+  cursor: pointer;
+}
+i.fa-brands.fa-whatsapp.fa-2xl:hover {
+  color: rgb(0, 200, 20);
+}
+
+i.fa-brands.fa-youtube.fa-2xl {
+  color: rgb(216, 74, 74);
+  cursor: pointer;
+}
+i.fa-brands.fa-youtube.fa-2xl:hover {
+  color: rgb(195, 0, 0);
+}
+/*Termina iconos redes sociales*/
+
+.col-7 {
+  margin-left: 9%;
+  margin-top: 2%;
+}
+
+.linea {
+  border-top: 1px solid #180c71fa;
+}
+@media (max-width: 850px) {
+  .flex-container {
+    flex-direction: column;
+    align-content: center;
+    line-height: 45px;
+  }
+}
+@media (max-width: 750px) {
+  .flex-container {
+    flex-direction: column;
+    align-content: center;
+    line-height: 45px;
+  }
+  .texto-encima {
+    font-size: 105%;
+    margin-top: -10%;
+  }
+  .form2 {
+    height: 5px;
+    margin-top: -15%;
+  }
+  .avanzado {
+    font-size: 30%;
+  }
+}
+@media (max-width: 850px) {
+  .contenedor-flex {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
+@media (max-width: 750px) {
+  .contenedor-flex {
+    flex-direction: column;
+    align-content: center;
+  }
+}
