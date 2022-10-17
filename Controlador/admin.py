@@ -1,0 +1,10 @@
+# LoginAdmin()
+# ViewCasa()
+# AddCasa()
+# DeleteCasa()
+# ModifyCasa()
+# ReservarCasa()
+# ConfirmReserva()
+# ConfirmVenta()
+
+# CerrarSesionAdmin()
