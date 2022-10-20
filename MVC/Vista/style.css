@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -51,7 +50,6 @@ ul li a {
 /* FORMULARIO */
 
 .formBusqueda {
-  overflow-y: hidden;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -73,7 +71,7 @@ ul li a {
   position: absolute;
   font-size: 36px;
   line-height: 42px;
-  width: 100%;
+  width: 90%;
   top: 150px;
   left: 10px;
 }
@@ -103,9 +101,35 @@ a:hover {
 
 .modal {
   visibility: visible;
-  overflow-y: hidden;
+  overflow-y: visible;
+}
+.caja {
+  width: 370px;
+  height: 370px;
+  line-height: 370px;
+  margin: 4px;
+  margin-top: -40px;
+}
+.flex-contenedor {
+  display: flex;
+  background-color: rgb(194, 240, 248);
+  height: 310px;
+  margin: 0%;
+}
+.flex-contenedor1 {
+  display: flex;
+  background-color: rgb(194, 240, 248);
+  height: 310px;
+  margin: 0%;
 }
 
+.destacadas h1 {
+  font-size: 22px;
+  background-color: rgb(194, 240, 248);
+  text-align: center;
+  height: 30px;
+  margin-bottom: 0px;
+}
 /* FOOTER */
 
 footer {
@@ -212,8 +236,6 @@ i.fa-brands.fa-whatsapp.fa-2xl:hover {
 }
 
 /* AJUSTES RESPONSIVE */
-
-
 
 @media (max-width: 850px) {
   .logoEmpresa {
@@ -340,4 +362,14 @@ i.fa-brands.fa-whatsapp.fa-2xl:hover {
   .form-group {
     width: 50%;
   }
+}
+
+.imagenesDestacadas {
+  font-size: 15px;
+  background-color: rgba(0, 0, 0, 0.448);
+  color: white;
+  font-family: "Kanit", sans-serif;
+  position: absolute;
+  line-height: 42px;
+  margin-top: -27%;
 }
