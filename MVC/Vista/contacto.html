@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/contacto.css">
     <script src="https://kit.fontawesome.com/32b882a6dd.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <header>
@@ -28,16 +29,19 @@
 
 <body>
     <div class="contact-clean">
-        <form method="post">
+        <form method="post" id="form">
             <h2 class="text-center">Contactanos</h2>
-            <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Nombre"></div>
-            <div class="form-group"><input class="form-control is-invalid" type="email" name="email" placeholder="Email"><small class="form-text text-danger">Please enter a correct email address.</small></div>
-            <div class="form-group"><textarea class="form-control" rows="14" name="message" placeholder="Deje su mensaje"></textarea></div>
-            <div class="form-group"><button class="btn btn-primary" type="submit">Enviar </button></div>
+            <div class="form-group"><input class="form-control" type="text" name="name" id="name" placeholder="Nombre"></div>
+            <div class="form-group"><input class="form-control is-invalid" type="email" name="email" id="email" placeholder="Email"><small class="form-text text-danger">Please enter a correct email address.</small></div>
+            <div class="form-group"><textarea class="form-control" rows="14" name="message" id="message" placeholder="Deje su mensaje"></textarea></div>
+            <div class="form-group"><button class="btn btn-primary" type="submit" id="submit">Enviar </button></div>
         </form>
     </div>
+    <p class="advertencias" id="advertencias"></p>
+    <script src="js/Contacto.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 
 <!-- FOOTER -->
