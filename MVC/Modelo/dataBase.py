@@ -1,49 +1,50 @@
-# ADMINISTRADORES
-    # DNI_admin: integer - PK
-    # nombre: varchar
-    # apellido: varchar
-    # telefono: varchar
-    # direccion: varchar
-    # id_inmueble: integer - FK
-    # DNI_empleado: integer - FK
-    # id_venta: integer - FK
-    # id_alquiler: integer - FK
-
-# AGENTES BIENES RAÍCES
-    # DNI_empleado: integer - PK
-    # nombre: varchar
-    # apellido: varchar
-    # telefono: varchar
-    # direccion: varchar
-    # DNI_cliente: integer - FK
-
-# CLIENTE
-    # DNI_cliente: integer - PK
-    # nombre: varchar
-    # apellido: varchar
-    # telefono: varchar
-    # direccion: varchar
-    # id_inmueble: integer - FK
-    # id_venta: integer - FK
-    # id_alquiler: integer - FK
-
-# INMUEBLES
-    # id_inmueble: integer - PK
+# INMUEBLES:
+    # id_inmueble: int - PK 
+    # id_alquiler: int - FK
+    # id_venta: int - FK
     # tipo_inmueble: varchar
-    # dormitorios: varchar
-    # km2: int/bigint
     # zona: varchar
-    # precio: varchar/bigint
-    # id_venta: integer - FK
-    # id_alquiler: integer - FK
+    # precio: int/bigint
+    # m2: int/float
+    # dormitorios: int
 
-# ALQUILER
-    # id_alquiler: integer - PK
-    # id_inmueble: integer - FK
-    # precio: varchar/integer
+# ALQUILER:
+    # id_alquiler: int - PK
+    # id_inmueble: int - FK
+    # precio: int/bigint
 
-# VENTA
-    # id_venta: integer - PK
-    # id_inmueble: integer - FK
-    # precio: integer
+# VENTA:
+    # id_venta: int - PK
+    # id_inmueble: int - FK
+    # precio: int/bigint
+
+# CLIENTE:
+    # dni_cliente: int - PK
+    # id_venta: int - FK
+    # id_alquiler: int - FK
+    # id_inmueble: int - FK
+    # nombre: varchar
+    # apellido: varchar
+    # direccion: varchar
+    # telefono: varchar
+
+# ADMINISTRADORES:
+    # dni_admin: int - PK
+    # dni_empleado: int - FK
+    # id_inmueble: int - FK
+    # id_venta: int - FK
+    # id_alquiler: int - FK
+    # nombre: varchar
+    # apellido: varchar
+    # telefono: varchar
+    # direccion: varchar
+
+# AGENTES BIENES RAICES:
+    # dni_empleado: int - PK
+    # dni_cliente: int - FK
+    # nombre: varchar
+    # apellido: varchar
+    # telefono: varchar
+    # direccion: varchar
+
 
