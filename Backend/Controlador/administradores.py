@@ -1,6 +1,6 @@
 # LoginAdmin()
 # AdminVenta()()
-# AdmintAlquiler()
+# AdminAlquiler()
 # ActualizarCatalogo()
 
 # CerrarSesionAdmin()
