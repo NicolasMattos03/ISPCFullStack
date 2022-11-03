@@ -34,7 +34,7 @@ ul li a {
   color: black;
   font-weight: bold;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   padding: 5px;
   margin-right: 25px;
 }
@@ -199,7 +199,7 @@ i.fa-brands.fa-facebook.fa-2xl {
   cursor: pointer;
 }
 i.fa-brands.fa-facebook.fa-2xl:hover {
-  color: cornflowerblue;
+  color: rgb(39, 106, 230);
 }
 i.fa-brands.fa-instagram.fa-2xl {
   color: black;
@@ -214,6 +214,10 @@ i.fa-brands.fa-whatsapp.fa-2xl {
 }
 i.fa-brands.fa-whatsapp.fa-2xl:hover {
   color: rgb(0, 200, 20);
+}
+
+i.fa-solid.fa-user.fa-2xl:hover {
+  color: rgb(0, 40, 200);
 }
 
 .colum3 {
@@ -315,7 +319,7 @@ i.fa-brands.fa-whatsapp.fa-2xl:hover {
     color: black;
     font-weight: bold;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     padding: 5px;
     margin-right: 10px;
   }
@@ -404,4 +408,42 @@ i.fa-brands.fa-whatsapp.fa-2xl:hover {
   .form-group {
     width: 50%;
   }
+}
+
+/* Ajustes Dropdown Menus */
+.navMenu li:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: rgb(194, 240, 248);
+}
+
+.list-group-item {
+  font-size: small;
+}
+
+/*Ajustes Whatsapp Flotante*/
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #21c25c;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+.float:hover {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #00ff5e;
+}
+
+.my-float {
+  margin-top: 16px;
 }

@@ -1,0 +1,228 @@
+/* ESTILO DEL NAVBAR */
+
+.logoEmpresa {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 25px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+ul li a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  margin-right: 25px;
+}
+
+.navMenu {
+  display: flex;
+  height: 20px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+}
+
+body {
+  background-size: white;
+}
+/* CUERPO DE LA PAGINA */
+
+.bodyNosotros {
+  background-color: rgb(194, 240, 248);
+  font-size: 103%;
+  padding: 15px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #f0ffff;
+  color: black;
+}
+
+.footer {
+  width: 100%;
+  padding: 40px;
+}
+
+.footerInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colum1 {
+  max-width: 400px;
+}
+
+.colum1 h1 {
+  font-size: 22px;
+}
+
+.colum1 p {
+  font-size: 14px;
+  color: grey;
+  margin-top: 20px;
+}
+
+.colum2 {
+  max-width: 400px;
+}
+
+.colum2 h1 {
+  font-size: 22px;
+}
+
+.redesIcons {
+  padding: 10px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+i.fa-brands.fa-facebook.fa-2xl {
+  color: black;
+  cursor: pointer;
+}
+i.fa-brands.fa-facebook.fa-2xl:hover {
+  color: cornflowerblue;
+}
+i.fa-brands.fa-instagram.fa-2xl {
+  color: black;
+  cursor: pointer;
+}
+i.fa-brands.fa-instagram.fa-2xl:hover {
+  color: rgb(225, 0, 255);
+}
+i.fa-brands.fa-whatsapp.fa-2xl {
+  color: black;
+  cursor: pointer;
+}
+i.fa-brands.fa-whatsapp.fa-2xl:hover {
+  color: rgb(0, 200, 20);
+}
+
+.colum3 {
+  max-width: 400px;
+}
+
+.colum3 h1 {
+  font-size: 22px;
+}
+
+.row2 {
+  margin-top: 20px;
+  display: flex;
+}
+
+.row2 img {
+  width: 36px;
+  height: 36px;
+}
+
+.lineaFooter {
+  width: 100%;
+  background: black;
+}
+
+.footer1 {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.copyright {
+  color: #c7c7c7;
+}
+
+/* AJUSTES RESPONSIVE */
+
+@media screen and (max-width: 1100px) {
+  .footerInfo {
+    flex-wrap: wrap;
+  }
+
+  .colum1 {
+    max-width: 100%;
+  }
+
+  .colum2,
+  .colum3 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 850px) {
+  .logoEmpresa {
+    flex-direction: column;
+    align-content: center;
+    line-height: 45px;
+  }
+
+  ul li a {
+    display: flex;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+  .footerInfo {
+    flex-wrap: wrap;
+  }
+
+  .colum1 {
+    max-width: 100%;
+  }
+  .colum2,
+  .colum3 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  .logoEmpresa {
+    flex-direction: column;
+    align-items: center;
+    line-height: 45px;
+  }
+
+  ul li a {
+    display: flex;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+  .footerInfo {
+    flex-wrap: wrap;
+  }
+
+  .colum1 {
+    width: 100%;
+  }
+  .colum2,
+  .colum3 {
+    margin-top: 40px;
+  }
+}
