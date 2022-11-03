@@ -47,4 +47,11 @@
     # telefono: varchar
     # direccion: varchar
 
+# SUSCRIPCIONES
+    # id_subs: int - PK
+    # DNI_cliente: int - FK
+    # nombre: varchar
+    # apellido: varchar
+    # e-mail: varchar not null
+
 
