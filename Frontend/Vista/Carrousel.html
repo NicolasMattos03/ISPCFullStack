@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="CSS/Carrousel.css">
+</head>
+
+<body>
+    <div class="cajacarrousel">
+        <div class="cajaimagenes">
+            <img src="Images/alquiler1.jpg" class="imgactiva" id="contenido 1">
+            <img src="Images/alquiler2.jpg" class="imgcarrousel" id="contenido 2">
+            <img src="Images/alquiler3.jpg" class="imgcarrousel" id="contenido 3">
+        </div>
+        <div class="puntos">
+            <button onclick = "punto(1)"></button>
+            <button onclick = "punto(2)"></button>
+            <button onclick = "punto(3)"></button>
+        </div>
+        <button id="anterior" onclick="anterior()"> &lt; </button>
+        <button id="siguiente" onclick="siguiente()"> &gt; </button>
+    </div>
+    <script src="js/carrousel.js"></script>
+</body>

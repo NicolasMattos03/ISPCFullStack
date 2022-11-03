@@ -1,34 +1,42 @@
-var carrouselVentas = ['.img/alquiler1.jpg', '.img/alquiler2.jpg', '.img/alquiler3.jpg', ''],
-cont = 0;
-console.log(carrouselVentas.length)
-function carrousel(contenedorCarrousel){
-    contenedorCarrousel.addEventListener('click', e=> {
-        let atras = contenedorCarrousel.querySelector('.atras'),
-            adelante = contenedorCarrousel.querySelector('.adelante'),
-            img = contenedorCarrousel.querySelector("imgCarrousel"),
-            boton = e.target;
-       
-        if (boton == atras){
-            if( cont > 0){
-                img.src = carrouselVentas[cont - 1];
-                cont--;
-            } else {
-                console.log(carrouselVentas[carrouselVentas.length - 1]);
-                cont = carrouselVentas.length -1;
-            }
-        } else if (boton == adelante){
-            if( cont < carrouselVentas.length - 1){
-                img.src = carrouselVentas[cont + 1];
-                cont++;
-            } else {
-                img.src = carrouselVentas[0];
-                cont = 0;
-            }
-        }
-    });
+let i = 0
+let j = 3
+
+const puntos = document.querySelectorAll(".puntos button");
+const imagenes = document.querySelectorAll(".cajaimagenes img");
+
+function siguiente(){
+    console.log(document.getElementsByClassName("imgactiva"));
+    document.getElementById("contenido " + (i+1)).classList.remove("imgactiva");
+    document.getElementById("contenido " + (i+1)).classList.add("imgcarrousel");
+    i = (j + i + 1) % j;
+    document.getElementById("contenido " + (i+1)).classList.remove("imgcarrousel");
+    document.getElementById("contenido " + (i+1)).classList.add("imgactiva");
+    indicador (i + 1);
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    let contenedorCarrousel = document.querySelector('.contenedorCarrousel');
-    carrousel(contenedorCarrousel);
-})
+function anterior(){
+    console.log(document.getElementsByClassName("imgactiva"));
+    document.getElementById("contenido " + (i+1)).classList.remove("imgactiva");
+    document.getElementById("contenido " + (i+1)).classList.add("imgcarrousel");
+    i = (j + i - 1) % j;
+    document.getElementById("contenido " + (i+1)).classList.remove("imgcarrousel");
+    document.getElementById("contenido " + (i+1)).classList.add("imgactiva");
+}
+
+function indicador(num){
+    puntos.forEach(function(punto){
+        punto.style.backgroundColor = "transparent";
+    });
+    document.querySelector(".puntos button:nth-child(" + num +")").style.backgroundColor = "aliceblue";
+}
+
+function punto(indice){
+    imagenes.forEach(function(imagen){
+        imagen.classList.remove("imgactiva");
+        imagen.classList.add("imgcarrousel");
+    });
+    document.getElementById("contenido " + indice).classList.remove("imgcarrousel");
+    document.getElementById("contenido " + indice).classList.add("imgactiva");
+    i = indice - 1;
+    indicador(indice);
+}
