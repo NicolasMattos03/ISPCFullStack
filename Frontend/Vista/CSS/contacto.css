@@ -328,3 +328,11 @@ i.fa-brands.fa-whatsapp.fa-2xl:hover {
   text-align: center;
   margin-left: 50px;
 }
+
+.advertencias{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #e73c3c;
+  padding-top: 20px;
+}

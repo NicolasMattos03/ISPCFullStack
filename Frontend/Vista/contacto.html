@@ -43,15 +43,15 @@
         </div>
         <div class="col">
           <div class="contact-clean">
-            <form method="post">
+            <form method="post" id="form">
               <h2 class="text-center">Contactanos</h2>
-              <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Nombre"></div>
-              <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"><small
+              <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Nombre" id="name"></div>
+              <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email" id="email"><small
                   class="form-text">Por favor, ingrese su e-mail
                   correctamente.</small>
               </div>
               <div class="form-group"><textarea class="form-control" rows="14" name="message"
-                  placeholder="Deje su mensaje"></textarea></div>
+                  placeholder="Deje su mensaje" id="message"></textarea></div>
               <div class="form-group"><button class="btn btn-primary" type="submit">Enviar </button></div>
             </form>
           </div>
@@ -81,6 +81,11 @@
     </div>
     <hr>
   </section>
+
+<!--Validación del formulario-->
+    <p class="advertencias" id="advertencias"></p>
+    <script src="js/Contacto.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 </body>
