@@ -47,4 +47,21 @@
     # telefono: varchar
     # direccion: varchar
 
+# SUSCRIPCIONES
+    # id_subs: int - PK
+    # DNI_cliente: int - FK
+    # nombre: varchar
+    # apellido: varchar
+    # e-mail: varchar not null
+    
+# CONTRATOS
+    # id_contrato: int - PK
+    # id_inmueble: int - FK
+    # id_venta: int - FK
+    # id_alquiler: int - FK 
+    # DNI_cliente: int - FK
+    # fecha_inicio: dateTime
+    # fecha_fin: dateTime
+    # fecha_revision: dateTime
+
 
