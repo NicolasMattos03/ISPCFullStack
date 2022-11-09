@@ -103,49 +103,7 @@ a:hover {
   visibility: visible;
   overflow-y: visible;
 }
-.caja {
-  width: 370px;
-  height: 370px;
-  line-height: 370px;
-  margin: 4px;
-  margin-top: -40px;
-}
-.flex-contenedor {
-  display: flex;
-  background-color: rgb(194, 240, 248);
-  height: 310px;
-  margin: 0%;
-}
-.flex-contenedor1 {
-  display: flex;
-  background-color: rgb(194, 240, 248);
-  height: 310px;
-  margin: 0%;
-}
 
-.destacadas h1 {
-  font-size: 22px;
-  background-color: rgb(194, 240, 248);
-  text-align: center;
-  height: 30px;
-  margin-bottom: 0px;
-}
-
-.imagenesDestacadas {
-  font-size: 15px;
-  background-color: rgba(0, 0, 0, 0.448);
-  color: white;
-  font-family: "Kanit", sans-serif;
-  position: absolute;
-  line-height: 42px;
-  margin-top: -27%;
-}
-
-.detalles {
-  background-color: rgb(194, 240, 248);
-  text-align: center;
-  margin-top: -30px;
-}
 /* FOOTER */
 
 footer {
@@ -217,6 +175,10 @@ i.fa-brands.fa-whatsapp.fa-2xl:hover {
 }
 
 i.fa-solid.fa-user.fa-2xl:hover {
+  color: rgb(0, 40, 200);
+}
+
+i.fa-solid.fa-user-plus:hover {
   color: rgb(0, 40, 200);
 }
 
@@ -419,31 +381,163 @@ i.fa-solid.fa-user.fa-2xl:hover {
   background-color: rgb(194, 240, 248);
 }
 
+/*Ajustes iconos sesion*/
 .list-group-item {
-  font-size: small;
+  font-size: 60%;
+}
+.IconsAccount {
+  padding: -17px;
+  margin-top: -4px;
+  margin-right: 8px;
 }
 
-/*Ajustes Whatsapp Flotante*/
-.float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 40px;
-  right: 40px;
-  background-color: #21c25c;
-  color: #fff;
-  border-radius: 50px;
+.sesion {
+  font-size: 10px;
   text-align: center;
-  font-size: 30px;
-  box-shadow: 2px 2px 3px #999;
-  z-index: 100;
-}
-.float:hover {
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #00ff5e;
+  margin-top: 20px;
+  color: black;
+  font-weight: bold;
 }
 
-.my-float {
-  margin-top: 16px;
+/*AJUSTES IMAGENES*/
+
+.galeria {
+  font-family: "open sans";
+  background-color: rgb(194, 240, 248);
+}
+
+.galeria h1 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 150%;
+  position: relative;
+}
+
+.linea {
+  border-top: 5px solid #288ece;
+  margin-bottom: 40px;
+}
+
+.linea1 {
+  border-top: 5px solid #288ece;
+  margin-bottom: 10px;
+}
+
+.espacio {
+  background: rgb(194, 240, 248);
+}
+
+.contenedor-imagenes {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 3px;
+}
+
+.contenedor-imagenes .imagen {
+  width: 32%;
+  position: relative;
+  height: 250px;
+  margin-bottom: 5px;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+}
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: rgba(70, 149, 199, 0.781);
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.overlay h5 {
+  color: rgb(13, 69, 79);
+  font-weight: 300;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#info-images {
+  color: rgb(9, 9, 9);
+  font-weight: 300;
+  font-size: 14px;
+  margin-left: 160px;
+  margin-top: 50px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+#descripcion {
+  color: rgb(249, 249, 249);
+  font-weight: 300;
+  font-size: 15px;
+  position: absolute;
+  margin-top: 40px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.imagen:hover .overlay {
+  height: 100%;
+  cursor: pointer;
+}
+
+/*AJUSTES IMAGENES RESPONSIVE*/
+@media screen and (max-width: 1000px) {
+  .contenedor-imagenes {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contenedor-imagenes {
+    width: 90%;
+  }
+  .contenedor-imagenes .imagen {
+    width: 48%;
+  }
+  #info-images {
+    color: rgb(9, 9, 9);
+
+    font-size: 90%;
+    margin-left: 120px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 22px;
+  }
+  .contenedor-imagenes {
+    width: 98%;
+  }
+  .contenedor-imagenes .imagen {
+    width: 80%;
+  }
 }

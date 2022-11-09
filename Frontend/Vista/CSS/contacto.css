@@ -329,6 +329,7 @@ i.fa-brands.fa-whatsapp.fa-2xl:hover {
   margin-left: 50px;
 }
 
+<<<<<<< HEAD
 .advertencias{
   width: 200px;
   text-align: center;
@@ -336,3 +337,21 @@ i.fa-brands.fa-whatsapp.fa-2xl:hover {
   color: #e73c3c;
   padding-top: 20px;
 }
+=======
+.advertencias {
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  color: #eb2424;
+  padding-top: 1px;
+  font-size: medium;
+}
+/* Ajustes Dropdown Menus */
+.navMenu li:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: rgb(194, 240, 248);
+}
+>>>>>>> d217574b660591bc0ddc62a1022e8cfd95e3ae79
