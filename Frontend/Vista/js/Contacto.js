@@ -33,6 +33,7 @@ form.addEventListener("submit", e=>{
     if(validar){
         avisos.innerHTML = advertencia
     } else {
+        avisos.style.color = "Green"
         avisos.innerHTML = "Su consulta ha sido enviada con éxito"
     }
 });
