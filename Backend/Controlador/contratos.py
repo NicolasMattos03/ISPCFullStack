@@ -1,3 +1,0 @@
-# IniciarContrato()
-# RevisionContrato()
-# FinalizarContrato()
