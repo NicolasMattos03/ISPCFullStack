@@ -1,4 +1,4 @@
-let i = 0
+     let i = 0
 let j = 3
 
 const puntos = document.querySelectorAll(".puntos button");

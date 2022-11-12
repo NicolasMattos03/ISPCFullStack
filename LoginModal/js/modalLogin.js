@@ -4,11 +4,10 @@ const email = document.getElementById("exampleInputEmail1")
 const contraseña = document.getElementById("exampleInputPassword1")
 const form = document.getElementById("form")
 const avisos = document.getElementById("advertencias")
-let i = true;
+
 
 
 form.addEventListener("submit", e=>{
-    i = false;
     e.preventDefault();
     let advertencia = "";
     avisos.innerHTML ="";
@@ -16,10 +15,10 @@ form.addEventListener("submit", e=>{
     let regexNombre = /^[A-Z]+$/i;
     let regexApellido = /^[A-Z]+$/i;
     let regexEmail = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+    let regexContraseña = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/;
     if(nombre.value ===''){
         advertencia += 'El campo nombre está vacío <br>';
         validar = true;
-        i = false;
     }
     if(apellido.value ===''){
         advertencia += 'El campo apellido está vacío <br>';
@@ -36,9 +35,10 @@ form.addEventListener("submit", e=>{
     if(!regexEmail.test(email.value)){
         advertencia += 'El campo email no es válido <br>';
         validar = true;
+        console.log("contraseña no válida")
     }
-    if(contraseña.length < 10){
-        advertencia += 'La contraseá debe de tener al menos 10 caracteres <br>';
+    if(!regexContraseña.test(contraseña.value)){
+        advertencia += 'La contraseña debe tener de 8 a 15 caracteres, una minúscula, mayúscula, un dígito, un caracter especial, y no puede contener espacios en blanco! <br>';
         validar = true;
     }
 
