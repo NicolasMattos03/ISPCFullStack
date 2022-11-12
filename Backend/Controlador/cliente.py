@@ -1,0 +1,5 @@
+# RegistrarCuenta()
+# VerificarContraseña()
+# VerificarCuenta()
+# LoginCuenta()
+# ContratarAgente()
