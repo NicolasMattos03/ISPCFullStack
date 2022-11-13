@@ -1,0 +1,347 @@
+/* ESTILO DEL NAVBAR */
+
+.logoEmpresa {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 25px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+ul li a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+.navMenu {
+  display: flex;
+  height: 20px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+}
+
+/* FOOTER */
+
+footer {
+  background: #f0ffff;
+  color: black;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+.footerInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colum1 {
+  max-width: 400px;
+}
+
+.colum1 h1 {
+  font-size: 22px;
+}
+
+.colum1 p {
+  font-size: 14px;
+  color: grey;
+  margin-top: 20px;
+}
+
+.colum2 {
+  max-width: 400px;
+}
+
+.colum2 h1 {
+  font-size: 22px;
+}
+
+.redesIcons {
+  padding: 10px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+i.fa-brands.fa-facebook.fa-2xl {
+  color: black;
+  cursor: pointer;
+}
+i.fa-brands.fa-facebook.fa-2xl:hover {
+  color: cornflowerblue;
+}
+i.fa-brands.fa-instagram.fa-2xl {
+  color: black;
+  cursor: pointer;
+}
+i.fa-brands.fa-instagram.fa-2xl:hover {
+  color: rgb(225, 0, 255);
+}
+i.fa-brands.fa-whatsapp.fa-2xl {
+  color: black;
+  cursor: pointer;
+}
+i.fa-brands.fa-whatsapp.fa-2xl:hover {
+  color: rgb(0, 200, 20);
+}
+
+.colum3 {
+  max-width: 400px;
+}
+
+.colum3 h1 {
+  font-size: 22px;
+}
+
+.row2 {
+  margin-top: 20px;
+  display: flex;
+}
+
+.row2 img {
+  width: 36px;
+  height: 36px;
+}
+
+.lineaFooter {
+  width: 100%;
+  background: black;
+}
+
+.footer1 {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.copyright {
+  color: #c7c7c7;
+}
+
+/* AJUSTES RESPONSIVE */
+
+@media screen and (max-width: 1100px) {
+  .footerInfo {
+    flex-wrap: wrap;
+  }
+
+  .colum1 {
+    max-width: 100%;
+  }
+
+  .colum2,
+  .colum3 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 850px) {
+  .logoEmpresa {
+    flex-direction: column;
+    align-content: center;
+    line-height: 45px;
+  }
+
+  ul li a {
+    display: flex;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+  .footerInfo {
+    flex-wrap: wrap;
+  }
+
+  .colum1 {
+    max-width: 100%;
+  }
+  .colum2,
+  .colum3 {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 750px) {
+  .logoEmpresa {
+    flex-direction: column;
+    align-items: center;
+    line-height: 45px;
+  }
+
+  ul li a {
+    display: flex;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 2px;
+  }
+  .footerInfo {
+    flex-wrap: wrap;
+  }
+
+  .colum1 {
+    max-width: 100%;
+  }
+  .colum2,
+  .colum3 {
+    margin-top: 40px;
+  }
+}
+
+/* FORMULARIO DE CONTACTO BOOTSTRAP */
+.container.text-center {
+  background-color: rgb(194, 240, 248);
+}
+.contact-clean {
+  background: white;
+  padding-top: -60px;
+}
+
+.maps {
+  padding-top: 60px;
+  background-color: rgb(194, 240, 248);
+}
+
+.maps p {
+  font-size: 17px;
+  background-color: rgb(194, 240, 248);
+}
+
+@media (max-width: 767px) {
+  .contact-clean {
+    padding: 10px 0;
+  }
+}
+
+.contact-clean form {
+  max-width: 480px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 4px;
+  color: #505e6c;
+}
+
+@media (max-width: 767px) {
+  .contact-clean form {
+    padding: 30px;
+  }
+}
+
+.contact-clean h2 {
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 36px;
+  color: inherit;
+}
+
+.contact-clean .form-group:last-child {
+  margin-bottom: 5px;
+}
+
+.contact-clean form .form-control {
+  background: #fff;
+  border-radius: 2px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+  outline: none;
+  color: inherit;
+  padding-left: 12px;
+  height: 42px;
+}
+
+.contact-clean form .form-control:focus {
+  border: 1px solid #b2b2b2;
+}
+
+.contact-clean form textarea.form-control {
+  min-height: 100px;
+  max-height: 260px;
+  padding-top: 10px;
+  resize: vertical;
+}
+
+.contact-clean form .btn {
+  padding: 16px 32px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  text-shadow: none;
+  opacity: 0.9;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  line-height: 1;
+  outline: none !important;
+}
+
+.contact-clean form .btn:hover {
+  opacity: 1;
+}
+
+.contact-clean form .btn:active {
+  transform: translateY(1px);
+}
+
+.contact-clean form .btn-primary {
+  background-color: #055ada !important;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.Icons {
+  padding: 10px;
+  margin-top: 20px;
+  display: inline-block;
+  font-size: small;
+  text-align: center;
+  margin-left: 50px;
+}
+
+.advertencias {
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  color: #eb2424;
+  padding-top: 1px;
+  font-size: medium;
+}
+/* Ajustes Dropdown Menus */
+.navMenu li:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: rgb(194, 240, 248);
+}

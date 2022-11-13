@@ -1,0 +1,10 @@
+.advertencias {
+  width: 300px;
+  height: 70px;
+  text-align: center;
+  margin: auto;
+  color: #eb2424;
+  padding-top: 1px;
+  font-size: small;
+  background-color: blue;
+}
