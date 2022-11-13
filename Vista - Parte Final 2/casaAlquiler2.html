@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alquileres -- 3 Habitaciones</title>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="CSS/ventaCasas.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/32b882a6dd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logoEmpresa">
+        <img src="Images/logoestate1.png" alt="logo-estate" width="35%" height="35%"></a>
+      </div>
+
+      <ul class="navMenu">
+        <li><a href="index.html">Inicio</a></li>
+        <li>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Venta
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="ventaCasas.html">Casas</a></li>
+              <li><a class="dropdown-item" href="ventaDeptos.html">Departamentos</a></li>
+              <li><a class="dropdown-item" href="ventaTerrenos.html">Terrenos</a></li>
+            </ul>
+        </li>
+        </div>
+        <li>
+          <div class="dropdown">
+            <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Alquiler
+            </a>
+
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <li><a class="dropdown-item" href="alquilerCasas.html">Casas</a></li>
+              <li><a class="dropdown-item" href="alquilerDeptos.html">Departamentos</a></li>
+            </ul>
+        </li>
+        </div>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+
+        <!-- Button trigger modal -->
+        <div class="IconsAccount">
+          <li class="list-group-item"><i class="fa-solid fa-user fa-2xl" type="button" data-bs-toggle="modal"
+              data-bs-target="#exampleModal" title="Iniciar Sesion">
+              <p class="sesion">Login</p>
+            </i></li>
+        </div>
+
+        <div class="IconsAccount">
+          <li class="list-group-item"><i class="fa-solid fa-user-plus fa-2xl" type="button" data-bs-toggle="modal"
+              data-bs-target="#exampleModal1" title="Crear Cuenta">
+              <p class="sesion">Sign in</p>
+            </i></li>
+      </ul>
+      </div>
+    </nav>
+
+  </header>
+  <section class="Fondos">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <h4>Casa en alquiler con 3 habitaciones</h4>
+          <div class="precio">$320.000</div>
+          <div class="cajacarrousel">
+            <div class="cajaimagenes">
+              <img src="Images/CasaAlquiler2/Image1.png" class="imgactiva" id="contenido 1">
+              <img src="Images/CasaAlquiler2/Image2.png" class="imgcarrousel" id="contenido 2">
+              <img src="Images/CasaAlquiler2/Image3.png" class="imgcarrousel" id="contenido 3">
+              <img src="Images/CasaAlquiler2/Image4.png" class="imgcarrousel" id="contenido 4">
+              <img src="Images/CasaAlquiler2/Image5.png" class="imgcarrousel" id="contenido 5">
+              <img src="Images/CasaAlquiler2/Image6.png" class="imgcarrousel" id="contenido 6">
+            </div>
+            <div class="puntos">
+              <button onclick="punto(1)"></button>
+              <button onclick="punto(2)"></button>
+              <button onclick="punto(3)"></button>
+              <button onclick="punto(4)"></button>
+              <button onclick="punto(5)"></button>
+              <button onclick="punto(6)"></button>
+            </div>
+            <button id="anterior" onclick="anterior()"> &lt; </button>
+            <button id="siguiente" onclick="siguiente()"> &gt; </button>
+          </div>
+        </div>
+        <div class="col">
+          <div class="ubicacion">Ubicacion</div>
+          <div class="mapaCasa">
+            <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-64.18761134147645%2C-31.42764692804981%2C-64.1830623149872%2C-31.422336930922484&amp;layer=mapnik"
+              style="border: 1px solid black"></iframe><br /><small><a
+                href="https://www.openstreetmap.org/#map=17/-31.42499/-64.18534">Ver mapa más grande</a></small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="Iconos">
+
+    <div class="Icons">
+      <i class="fa-solid fa-bed"></i>
+      <p>Dormitorios:</p>
+      <p>3</p>
+    </div>
+
+    <div class="Icons">
+      <i class="fa-solid fa-cube"></i>
+      <p>Ambientes:</p>
+      <p>4</p>
+    </div>
+
+    <div class="Icons">
+      <i class="fa-solid fa-toilet"></i>
+      <p>Baños:</p>
+      <p>2</p>
+    </div>
+
+    <div class="Icons">
+      <i class="fa-solid fa-car"></i>
+      <p>Garage:</p>
+      <p>SI</p>
+    </div>
+
+    <div class="Icons">
+      <i class="fa-solid fa-house"></i>
+      <p>M² Totales:</p>
+      <p>202</p>
+
+    </div>
+
+    <div class="Icons">
+      <i class="fa-solid fa-clone"></i>
+      <p>M² Usados:</p>
+      <p>166</p>
+    </div>
+
+  </section>
+
+  <section class="masDetalles">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col" id="columna">
+          <h4>Descripcion de la propiedad</h4>
+          Excelente ubicación. En planta baja cuenta con Living comedor, dos amplios dormitorios con placard, baño
+          completo,toilette, cocina c/ comedor diario,
+          lavadero, garaje para un vehículo, sótano, galería con jardín y parrilla. En planta alta, 1 dormitorios o
+          escritorio.
+        </div>
+        <div class="col" id="columna1">
+          <h4>Mas detalles</h4>
+          <p><b>Parrilla -- Calefaccion</b></p>
+          <p><b>Asfalto -- Alumbrado publico</b></p>
+          <P><b>Agua corriente -- Cloacas</b></P>
+        </div>
+        <div class="col" id="columna2">
+          <h4>Me interesa</h4>
+          <div class="col">
+            <div class="contact-clean">
+              <form method="post" id="form">
+                <h2 class="text-center"></h2>
+                <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Nombre"
+                    id="name"></div>
+                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"
+                    id="email"><small class="form-text"></small>
+                </div>
+                <textarea name="message" id="message" class="form-control"
+                  required="required">Hola, me interesa esta propiedad y quiero que me contacten. Gracias.</textarea>
+
+                <p class="advertencias" id="advertencias"></p>
+
+
+
+              </form>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="g-recaptcha" data-sitekey="6LcBcfYUAAAAAKZ1zdXGvYtPy6dyab2KZ9M1a4td" data-size="normal"
+              data-theme="light" id="recaptcha-element">
+              <div style="width: 304px; height: 78px;">
+                <div><iframe title="reCAPTCHA"
+                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcBcfYUAAAAAKZ1zdXGvYtPy6dyab2KZ9M1a4td&amp;co=aHR0cHM6Ly93d3cudGllcnJhbm9ibGUuY29tLmFyOjQ0Mw..&amp;hl=es-419&amp;v=jF-AgDWy8ih0GfLx4Semh9UK&amp;theme=light&amp;size=normal&amp;cb=kvnfvik78gpt"
+                    width="304" height="78" role="presentation" name="a-rbwdoxm6wtzh" frameborder="0" scrolling="no"
+                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"></iframe>
+                </div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                  style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none; --darkreader-inline-border-top:#42474a; --darkreader-inline-border-right:#42474a; --darkreader-inline-border-bottom:#42474a; --darkreader-inline-border-left:#42474a;"
+                  data-darkreader-inline-border-top="" data-darkreader-inline-border-right=""
+                  data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left=""></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="form-group" id="botonEnviar"><button class="btn btn-primary" type="submit">Enviar </button></div>
+        </div>
+
+      </div>
+
+    </div>
+    </div>
+
+  </section>
+  <!-- FOOTER -->
+
+</body>
+<footer>
+
+  <div class="footer">
+
+    <div class="footerInfo">
+
+      <div class="colum1">
+        <h1>Mas información</h1>
+
+        <p>Somos un equipo joven y dinámico preparado profesionalmente para las exigencias de un mercado en
+          constante
+          movimiento y
+          evolución. Orientados hacia la excelencia, proporcionamos asesoramiento en inversiones inmobiliarias,
+          compra, venta, alquiler y administración de todo tipo de bienes raíces.</p>
+      </div>
+
+      <div class="colum2">
+
+        <h1>Seguí nuestras redes</h1>
+
+        <div class="redesIcons">
+          <i class="fa-brands fa-facebook fa-2xl"></i>
+        </div>
+
+        <div class="redesIcons">
+          <i class="fa-brands fa-instagram fa-2xl"></i></li>
+        </div>
+
+        <div class="redesIcons">
+          <i class="fa-brands fa-whatsapp fa-2xl"></i>
+        </div>
+      </div>
+      <!--COMIENZA SUSCRIBIRSE-->
+
+      <div class="colum3">
+        <section class="flex-container">
+          <div class="suscripcion">
+            <p>Ingrese su email para suscribirse</p>
+          </div>
+          <div class="subscribe">
+            <form method="POST" action="" accept-charset="UTF-8"><input name="_token" type="hidden"
+                value="SwVm4IFHbJJKTDkaoV7oqKJ80aBo7JPMbfP1hxaq">
+              <input type="hidden" id="user_id" name="user_id" value="215" required="required">
+              <input type="hidden" id="name" name="name" value="newslatter" required="required">
+              <input type="hidden" id="message" name="message" value="newslatter" required="required">
+              <input type="hidden" name="type" value="subscribe" required="required">
+              <div class="input-group">
+                <input type="email" class="form-control input-sm" id="email" placeholder="Ingrese su Email" name="email"
+                  value="" required="required">
+                <button type="submit" class="btn btn-default1">Suscribite</button>
+              </div>
+          </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="lineaFooter">
+    <div class="footer1">
+      <div class="copyright">
+        ESTATE © 2022 Todos los Derechos Reservados
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="js/carrousel.js"></script>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="CSS/Carrousel.css">
+</head>
+
+<body>
+
+  <div class="cajacarrousel">
+    <div class="cajaimagenes">
+      <img src="Images/alquiler1.jpg" class="imgactiva" id="contenido 1">
+      <img src="Images/alquiler2.jpg" class="imgcarrousel" id="contenido 2">
+      <img src="Images/alquiler3.jpg" class="imgcarrousel" id="contenido 3">
+    </div>
+    <div class="puntos">
+      <button onclick="punto(1)"></button>
+      <button onclick="punto(2)"></button>
+      <button onclick="punto(3)"></button>
+    </div>
+    <button id="anterior" onclick="anterior()"> &lt; </button>
+    <button id="siguiente" onclick="siguiente()"> &gt; </button>
+  </div>
+
+
+
+
+  <script src="js/carrousel.js"></script>
+
+  <!-- Botón WhatsApp-->
+
+  <div class="nav-bottom">
+    <div class="popup-whatsapp fadeIn">
+      <div class="content-whatsapp -top"><button type="button" class="closePopup">
+          <i class="material-icons icon-font-color">close</i>
+        </button>
+        <p> <img src="Images/logoestate1.png" width="50"> Hola, ¿en que podemos ayudarle? Envianos un Whatsapp! </p>
+      </div>
+      <div class="content-whatsapp -bottom">
+        <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+        <button class="mensajePopup" id="send-btn" type="button">
+          <i class="material-icons icon-font-color--black">send</i>
+        </button>
+      </div>
+    </div>
+    <button type="button" id="whats-openPopup" class="whatsapp-button">
+      <div class="float">
+        <i class="fa fa-whatsapp my-float"></i>
+      </div>
+    </button>
+    <div class="circle-anime"></div>
+    <script src="js/script2.js"></script>
+    <script src="js/modalLogin.js"></script>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer">
+
+      <div class="footerInfo">
+
+        <div class="colum1">
+          <h1>Mas información</h1>
+
+          <p>Somos un equipo joven y dinámico preparado profesionalmente para las exigencias de un mercado en
+            constante
+            movimiento y
+            evolución. Orientados hacia la excelencia, proporcionamos asesoramiento en inversiones inmobiliarias,
+            compra, venta, alquiler y administración de todo tipo de bienes raíces.</p>
+        </div>
+
+        <div class="colum2">
+
+          <h1>Seguí nuestras redes</h1>
+
+          <div class="redesIcons">
+            <i class="fa-brands fa-facebook fa-2xl"></i>
+          </div>
+
+          <div class="redesIcons">
+            <i class="fa-brands fa-instagram fa-2xl"></i></li>
+          </div>
+
+          <div class="redesIcons">
+            <i class="fa-brands fa-whatsapp fa-2xl"></i>
+          </div>
+        </div>
+        <!--COMIENZA SUSCRIBIRSE-->
+
+        <div class="colum3">
+          <section class="flex-container">
+            <div class="suscripcion">
+              <p>Ingrese su email para suscribirse</p>
+            </div>
+            <div class="subscribe">
+              <form method="POST" action="" accept-charset="UTF-8"><input name="_token" type="hidden"
+                  value="SwVm4IFHbJJKTDkaoV7oqKJ80aBo7JPMbfP1hxaq">
+                <input type="hidden" id="user_id" name="user_id" value="215" required="required">
+                <input type="hidden" id="name" name="name" value="newslatter" required="required">
+                <input type="hidden" id="message" name="message" value="newslatter" required="required">
+                <input type="hidden" name="type" value="subscribe" required="required">
+                <div class="input-group">
+                  <input type="email" class="form-control input-sm" id="email" placeholder="Ingrese su Email"
+                    name="email" value="" required="required">
+                  <button type="submit" class="btn btn-default1">Suscribite</button>
+                </div>
+            </div>
+            </form>
+
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div class="lineaFooter">
+      <div class="footer1">
+        <div class="copyright">
+          ESTATE © 2022 Todos los Derechos Reservados
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>

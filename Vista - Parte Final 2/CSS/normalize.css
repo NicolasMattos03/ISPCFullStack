@@ -1,0 +1,28 @@
+
+/**
+ * Remove default margin.
+ */
+
+*{
+	margin:0;
+	padding:0;
+}
+body {
+  margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+}
+p{
+	padding:0;
+	margin:0;
+}
+ul, li{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+a{
+	color:inherit;
+}
