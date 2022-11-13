@@ -1,0 +1,4 @@
+# RealizarBusqueda()
+# BusquedaPersonalizada()
+# MostrarInfo()
+# ActualizarInfo()
