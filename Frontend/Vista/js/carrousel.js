@@ -1,5 +1,5 @@
-     let i = 0
-let j = 3
+let i = 0
+let j = 3 //acá le indicas cuántas imagenes son, en el caso que me mostraste, 6
 
 const puntos = document.querySelectorAll(".puntos button");
 const imagenes = document.querySelectorAll(".cajaimagenes img");
@@ -41,4 +41,4 @@ function punto(indice){
     indicador(indice);
 }
 
-setInterval(siguiente, 5000);
+setInterval(siguiente, 5000); //esta cosa tan simple... es el modo automatico, esta linea no mas
