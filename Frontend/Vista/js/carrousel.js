@@ -48,3 +48,5 @@ function punto(indice) {
   i = indice - 1;
   indicador(indice);
 }
+
+setInterval(siguiente, 5000);
