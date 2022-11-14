@@ -1,5 +1,5 @@
 let i = 0;
-let j = 3;
+let j = 6;
 
 const puntos = document.querySelectorAll(".puntos button");
 const imagenes = document.querySelectorAll(".cajaimagenes img");
