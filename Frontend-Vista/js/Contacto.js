@@ -9,7 +9,7 @@ form.addEventListener("submit", (e) => {
   let advertencia = "";
   avisos.innerHTML = "";
   let validar = false;
-  let regexNombre = /^[A-Z]+$/i;
+  let regexNombre = /^([A-Za-z]+ )+[A-Za-z]+$|^[A-Za-z]+$/gi;
   let regexEmail = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
   if (nombre.value === "") {
     advertencia += "El campo nombre está vacío <br>";

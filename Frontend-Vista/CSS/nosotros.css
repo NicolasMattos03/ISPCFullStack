@@ -37,6 +37,16 @@ ul li a {
     sans-serif;
 }
 
+/* Ajustes Dropdown Menus */
+.navMenu li:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: rgb(194, 240, 248);
+}
+
+
 body {
   background-size: white;
 }
