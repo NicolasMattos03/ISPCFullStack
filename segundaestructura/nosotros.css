@@ -45,16 +45,21 @@
 
 /* CUERPO DE LA PAGINA */
 
-.bodyNosotros{
+.Nos{
   background-color: whitesmoke;
-  display: flex;
-  padding: 20px;
 }
 
-.nosotrosImg {
-    display: flex;
-    padding: 40px;
-    height: 350px;
+
+.textNosotros{
+  padding: 15px;
+}
+
+
+p{
+  font-size: 20px;
+  margin-bottom: 5px;
+  text-align: center;
+  padding: 15px;
 }
 
 /* FOOTER */
@@ -91,8 +96,7 @@ footer{
 }
 
 .colum2{
-  max-width: 400px;
-  
+  max-width: 400px; 
 }
 
 .colum2 h1{
@@ -179,6 +183,20 @@ i.fa-brands.fa-whatsapp.fa-2xl:hover {
     .colum3{
         margin-top: 40px;
     }
+
+    .textNosotros{
+      padding: 15px;
+      margin-top: 10px;
+    }
+    
+    
+    p{
+      font-size: 20px;
+      margin-bottom: 5px;
+      text-align: center;
+      padding: 15px;
+    }
+    
   }
 
   @media (max-width: 850px){
@@ -211,19 +229,26 @@ i.fa-brands.fa-whatsapp.fa-2xl:hover {
         margin-top: 40px;
       }
 
-      .bodyNosotros{
-        background-color: whitesmoke;
-        width: 100%;
-        display: flex;
-        padding: 20px;
+      p{
+        font-weight: 380px;
+        margin-bottom: 15px;
+        text-align: left;
+      }
+
+      .textNosotros{
+        padding: 15px;
+        margin-top: 10px;
       }
       
-      .nosotrosImg {
-          display: flex;
-          padding: 40px;
-          margin-left: 25px;
-          height: 270px;
+      
+      p{
+        font-size: 20px;
+        margin-bottom: 5px;
+        text-align: left;
+        padding: 15px;
       }
+
+  
     }
 
 @media (max-width: 750px){
@@ -256,20 +281,19 @@ i.fa-brands.fa-whatsapp.fa-2xl:hover {
         margin-top: 40px;
       }
 
-      .bodyNosotros{
-        background-color: whitesmoke;
-        width: 100%;
-        display: flex;
-        padding: 20px;
+      .textNosotros{
+        padding: 15px;
+        margin-top: 10px;
       }
       
-      .nosotrosImg {
-          display: flex;
-          padding: 40px;
-          margin-left: 25px;
-          height: 270px;
+      
+      p{
+        font-size: 20px;
+        margin-bottom: 5px;
+        text-align: left;
+        padding: 15px;
       }
-  
+
     }
 
   
