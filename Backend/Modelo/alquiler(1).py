@@ -1,2 +1,0 @@
-# RealizarReserva()
-# MostrarDisponibles()

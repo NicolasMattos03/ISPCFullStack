@@ -1,3 +1,0 @@
-# RealizarSub()
-# EnviarInfoMail()
-# CancelarSub()
