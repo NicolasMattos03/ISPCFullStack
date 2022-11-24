@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: #101010;
+}
+/* ESTILO DEL NAVBAR */
+
+.logoEmpresa {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 25px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+ul li a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 5px;
+  margin-right: 25px;
+}
+
+.navMenu {
+  display: flex;
+  height: 20px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  background: #f0ffff;
+  color: black;
+}
+
+.footer {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+}
+
+.footerInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colum1 {
+  max-width: 400px;
+}
+
+.colum1 h1 {
+  font-size: 22px;
+}
+
+.colum1 p {
+  font-size: 14px;
+  color: grey;
+  margin-top: 20px;
+}
+
+.colum2 {
+  max-width: 400px;
+}
+
+.colum2 h1 {
+  font-size: 22px;
+}
+
+.redesIcons {
+  padding: 10px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+i.fa-brands.fa-facebook.fa-2xl {
+  color: black;
+  cursor: pointer;
+}
+i.fa-brands.fa-facebook.fa-2xl:hover {
+  color: rgb(39, 106, 230);
+}
+i.fa-brands.fa-instagram.fa-2xl {
+  color: black;
+  cursor: pointer;
+}
+i.fa-brands.fa-instagram.fa-2xl:hover {
+  color: rgb(225, 0, 255);
+}
+i.fa-brands.fa-whatsapp.fa-2xl {
+  color: black;
+  cursor: pointer;
+}
+i.fa-brands.fa-whatsapp.fa-2xl:hover {
+  color: rgb(0, 200, 20);
+}
+
+.colum3 {
+  max-width: 400px;
+}
+
+.colum3 h1 {
+  font-size: 22px;
+}
+
+.row2 {
+  margin-top: 20px;
+  display: flex;
+}
+
+.row2 img {
+  width: 36px;
+  height: 36px;
+}
+
+.lineaFooter {
+  width: 100%;
+  background: black;
+}
+
+.footer1 {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.copyright {
+  color: #c7c7c7;
+}
+
+/* AJUSTES RESPONSIVE */
+
+@media (max-width: 850px) {
+  .logoEmpresa {
+    flex-direction: column;
+    align-content: center;
+    line-height: 45px;
+  }
+
+  ul li a {
+    display: flex;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+  .footerInfo {
+    flex-wrap: wrap;
+  }
+
+  .colum1 {
+    max-width: 100%;
+  }
+  .colum2,
+  .colum3 {
+    margin-top: 40px;
+  }
+  .busquedaTexto {
+    font-size: 105%;
+    margin-top: -65px;
+  }
+
+  .form-group {
+    margin-top: -90px;
+    font-size: 105%;
+  }
+  .busquedaBA {
+    margin-top: -40px;
+  }
+  a.btn.btn-info {
+    margin-top: 1em;
+    margin-left: -9%;
+  }
+  .btn.btn-info {
+    margin-top: -80px;
+    margin-left: 160px;
+  }
+}
+
+@media (max-width: 750px) {
+  .logoEmpresa {
+    flex-direction: column;
+    align-items: center;
+    line-height: 45px;
+  }
+
+  ul li a {
+    display: flex;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  .footerInfo {
+    flex-wrap: wrap;
+  }
+
+  .colum1 {
+    max-width: 100%;
+  }
+  .colum2,
+  .colum3 {
+    margin-top: 40px;
+  }
+
+  .busquedaTexto {
+    font-size: 105%;
+    margin-top: -65px;
+  }
+
+  .form-group {
+    margin-top: -90px;
+    font-size: 105%;
+  }
+  .busquedaBA {
+    margin-top: -40px;
+  }
+  a.btn.btn-info {
+    margin-top: -55px;
+    margin-right: -62%;
+  }
+  .btn.btn-info {
+    margin-left: 170px;
+  }
+  .form-group {
+    width: 60%;
+  }
+  .caja img {
+    margin-left: 90px;
+    display: block;
+  }
+  .flex-contenedor {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    background-color: rgb(194, 240, 248);
+  }
+  .flex-contenedor1 {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    background-color: rgb(194, 240, 248);
+  }
+  .imagenesDestacadas {
+    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.448);
+    color: white;
+    font-family: "Kanit", sans-serif;
+    margin-left: 90px;
+    margin-top: -50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .busquedaTexto {
+    font-size: 105%;
+    margin-top: -65px;
+  }
+
+  .form-group {
+    margin-top: -90px;
+    font-size: 105%;
+  }
+  .busquedaBA {
+    margin-top: -40px;
+  }
+  a.btn.btn-info {
+    margin-top: -55px;
+    margin-right: -62%;
+  }
+  .btn.btn-info {
+    margin-left: 190px;
+  }
+  .form-group {
+    width: 50%;
+  }
+}
+
+/*AJUSTES CARROUSEL*/
+
+.cajacarrousel {
+  background-color: rgb(194, 240, 248);
+  position: relative;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  left: 50%;
+  top: 50%;
+  border-radius: 5px;
+  width: 95%;
+  margin-top: 20px;
+}
+
+.cajaimagenes {
+  position: relative;
+  border: 1px solid black;
+  width: 100%;
+  font-size: small;
+}
+
+.imgcarrousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.imgactiva {
+  display: block;
+}
+
+.puntos {
+  width: 150px;
+  margin-top: 6px;
+  margin-left: 165px;
+  display: flex;
+  align-items: center;
+}
+
+.puntos button {
+  height: 12px;
+  width: 12px;
+  border-radius: 150%;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.puntos button:nth-child(1) {
+  background-color: aliceblue;
+}
+
+#anterior,
+#siguiente {
+  height: 40px;
+  width: 20px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+
+  font-weight: bolder;
+  outline: none;
+  cursor: pointer;
+}
+
+#anterior {
+  left: 15px;
+}
+
+#siguiente {
+  right: 15px;
+}
+
+.precio {
+  position: absolute;
+  background-color: rgb(78, 213, 237);
+  margin-left: 200px;
+  margin-bottom: 30px;
+}
+
+.ubicacion {
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: x-large;
+}
+
+.mapaCasa {
+  margin-top: 95px;
+}
+
+.Icons {
+  padding: 10px;
+  margin-top: 50px;
+  display: inline-block;
+  font-size: small;
+  text-align: center;
+  margin-left: 80px;
+  background-color: rgba(7, 207, 242, 0.265);
+}
+
+.Iconos {
+  background-color: rgb(194, 240, 248);
+}
+
+.Fondos {
+  background-color: rgb(194, 240, 248);
+}
+
+.masDetalles {
+  background-color: rgb(80, 227, 253);
+  height: 370px;
+}
+
+.col {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  font-size: 88%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+.col p {
+  margin-bottom: 0;
+  margin-top: 3px;
+  font-family: sans-serif;
+  padding-top: 5px;
+}
+
+#columna {
+  margin-top: 70px;
+  font-size: medium;
+}
+
+#columna1 {
+  margin-top: 70px;
+}
+
+#columna h4 {
+  background-color: rgb(61, 152, 168);
+  font-size: 140%;
+}
+#columna1 h4 {
+  background-color: rgb(194, 240, 248);
+}
+#columna2 h4 {
+  background-color: rgb(61, 152, 168);
+}
+.Icons {
+  border-radius: 50%;
+  width: 8%;
+  height: 5%;
+  margin-bottom: 50px;
+}
+
+#botonEnviar {
+  margin-top: 3px;
+}
+
+.form-control {
+  resize: none;
+}
+
+/*Ajustes iconos sesion*/
+.list-group-item {
+  font-size: 60%;
+}
+.IconsAccount {
+  padding: -17px;
+  margin-top: -4px;
+  margin-right: 8px;
+}
+
+.sesion {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+/* Ajustes Dropdown Menus */
+.navMenu li:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a:hover {
+  background-color: rgb(194, 240, 248);
+}

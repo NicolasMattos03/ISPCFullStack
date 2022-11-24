@@ -1,0 +1,70 @@
+.cajacarrousel {
+  background-color: rgb(194, 240, 248);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  left: 50%;
+  top: 50%;
+  border-radius: 5px;
+}
+
+.cajaimagenes {
+  position: relative;
+
+  border: 1px solid black;
+}
+
+.imgcarrousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.imgactiva {
+  display: block;
+}
+
+.puntos {
+  width: 150px;
+  margin-top: 6px;
+  margin-left: 165px;
+  display: flex;
+  align-items: center;
+}
+
+.puntos button {
+  height: 18px;
+  width: 9px;
+  border-radius: 180%;
+
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.puntos button:nth-child(1) {
+  background-color: aliceblue;
+}
+
+#anterior,
+#siguiente {
+  height: 40px;
+  width: 20px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+
+  font-weight: bolder;
+  outline: none;
+  cursor: pointer;
+}
+
+#anterior {
+  left: 15px;
+}
+
+#siguiente {
+  right: 15px;
+}
