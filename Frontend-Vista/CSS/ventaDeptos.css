@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* NAVBAR */
+  
+  .logoEmpresa {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 25px;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+  }
+  
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  ul li a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    margin-right: 25px;
+  }
+  
+  .navMenu {
+    display: flex;
+    height: 20px;
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+      sans-serif;
+  }
+  
+  
+  /* CUERPO DE LA PAGINA */
+  
+  body {
+    margin: 0px;
+    background-color: aliceblue;
+    font-family: 'Nerko One', cursive;
+  }
+  
+  button {
+    font-size: 16px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
+  
+  .page-nav {
+    background-color: #2196F3;
+    border: 1px solid black;
+    position: relative;
+  }
+  
+  .page-nav h1 {
+    margin: 20px;
+  }
+  
+  .button-checkout {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA; /* Blue */
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+  
+  .button-checkout:hover {
+    background-color: #008CBA; /* Blue */
+    color: white;
+  }
+  
+  .page-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .product-container {
+    margin: 15px;
+    padding: 2px 16px;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    background-color: white;
+  }
+  
+  .product-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .product-container img {
+    width: 300px;
+  }
+  
+  .product-container h1 {
+    margin-bottom: 10px;
+    margin-left: 15px;
+  }
+  
+  .button-add {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+    transition-duration: 0.4s;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+  }
+  
+  .button-add:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  /* AJUSTES RESPONSIVE */
+  
+  @media (max-width: 850px) {
+    .logoEmpresa {
+      flex-direction: column;
+      align-content: center;
+      line-height: 45px;
+    }
+  
+    ul li a {
+      display: flex;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 5px;
+      margin-right: 10px;
+    }
+  
+    .footerInfo {
+      flex-wrap: wrap;
+    }
+  
+    .colum1 {
+      max-width: 100%;
+    }
+    .colum2,
+    .colum3 {
+      margin-top: 40px;
+    }
+    .busquedaTexto {
+      font-size: 105%;
+      margin-top: -65px;
+    }
+  
+    .form-group {
+      margin-top: -90px;
+      font-size: 105%;
+    }
+    .busquedaBA {
+      margin-top: -40px;
+    }
+    a.btn.btn-info {
+      margin-top: 1em;
+      margin-left: -9%;
+    }
+    .btn.btn-info {
+      margin-top: -80px;
+      margin-left: 160px;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .logoEmpresa {
+      flex-direction: column;
+      align-items: center;
+      line-height: 45px;
+    }
+  
+    ul li a {
+      display: flex;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 5px;
+      margin-right: 10px;
+    }
+    .footerInfo {
+      flex-wrap: wrap;
+    }
+  
+    .colum1 {
+      max-width: 100%;
+    }
+    .colum2,
+    .colum3 {
+      margin-top: 40px;
+    }
+  
+    .busquedaTexto {
+      font-size: 105%;
+      margin-top: -65px;
+    }
+  
+    .form-group {
+      margin-top: -90px;
+      font-size: 105%;
+    }
+    .busquedaBA {
+      margin-top: -40px;
+    }
+    a.btn.btn-info {
+      margin-top: -55px;
+      margin-right: -62%;
+    }
+    .btn.btn-info {
+      margin-left: 170px;
+    }
+    .form-group {
+      width: 60%;
+    }
+    .caja img {
+      margin-left: 90px;
+      display: block;
+    }
+    .flex-contenedor {
+      width: 100%;
+      height: 100%;
+      display: block;
+      margin: auto;
+      background-color: rgb(194, 240, 248);
+    }
+    .flex-contenedor1 {
+      width: 100%;
+      height: 100%;
+      display: block;
+      margin: auto;
+      background-color: rgb(194, 240, 248);
+    }
+    .imagenesDestacadas {
+      font-size: 15px;
+      background-color: rgba(0, 0, 0, 0.448);
+      color: white;
+      font-family: "Kanit", sans-serif;
+      margin-left: 90px;
+      margin-top: -50px;
+    }
+  }
+  
+  @media (max-width: 550px) {
+    .busquedaTexto {
+      font-size: 102%;
+      margin-top: -65px;
+    }
+  
+    .form-group {
+      margin-top: -90px;
+      font-size: 105%;
+    }
+    .busquedaBA {
+      margin-top: -40px;
+    }
+    a.btn.btn-info {
+      margin-top: -55px;
+      margin-right: -62%;
+    }
+    .btn.btn-info {
+      margin-left: 190px;
+    }
+    .form-group {
+      width: 50%;
+    }
+  }
+  
+  /* Ajustes Dropdown Menus */
+  .navMenu li:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: rgb(194, 240, 248);
+  }
+  
